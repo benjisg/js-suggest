@@ -16,10 +16,10 @@ The module will automatically use the native browser JSON object if found, other
 
 Currently verified to work in:
 
-+ IE7
-+ Opera 10
-+ Firefox 3.5
-+ Safari 4
++ IE7+
++ Opera 10+
++ Firefox 3.5+
++ Safari 4+
 + Chrome
 	
 USAGE
