@@ -14,7 +14,8 @@ REQUIREMENTS
 __JSON serializing/deserializing of some sort__
 The module will automatically use the native browser JSON object if found, otherwise it searches for the inclusion of the YUI library and then the jQuery library to bind support to the JSON object.
 
-Currently verified to work in
+Currently verified to work in:
+
 + IE7
 + Opera 10
 + Firefox 3.5
