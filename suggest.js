@@ -129,14 +129,18 @@ var suggest = function(input_id, request_url, options) {
         /* General XMLHttpRequest object builder */
         var ajaxRequest = function() {
             if (window.XMLHttpRequest) {
-                // code for IE7+, Firefox, Chrome, Opera, Safari
-                return new XMLHttpRequest();
+				ajaxRequest = function() {
+					// code for IE7+, Firefox, Chrome, Opera, Safari
+					return new XMLHttpRequest();
+				};
             }
             if (window.ActiveXObject) {
                 // IE5 & IE6
-                return new ActiveXObject("Microsoft.XMLHTTP");
+				ajaxRequest = function() {
+					return new ActiveXObject("Microsoft.XMLHTTP");
+				};
             }
-            return null;
+            return ajaxRequest();
         };
         
         /* AJAX requests that generates a unique request id which is tied to the return result */
